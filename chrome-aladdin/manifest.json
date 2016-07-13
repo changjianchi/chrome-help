@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "work",
+    "version": "0.2.0",
+    "description": "第一次制作扩展",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "work",
+        "default_popup": "popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches": ["http://juesedanyaoshi.com/*"],
+            "js": ["script/jquery.js", "script/main.js"]
+        }
+    ]
+}
